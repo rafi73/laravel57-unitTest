@@ -3,7 +3,7 @@
 pipeline {
     agent {
         node {
-            label 'laravel57-unitTest'
+            label 'master'
         }
     }
     options {
