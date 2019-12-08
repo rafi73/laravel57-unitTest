@@ -3,7 +3,7 @@
 pipeline {
     agent {
         node {
-            label 'fundish-ci'
+            label 'laravel57-unitTest'
         }
     }
     options {
