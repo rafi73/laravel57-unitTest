@@ -5,7 +5,6 @@ node('master') {
         stage('build') {
             // Checkout the app at the given commit sha from the webhook
             checkout scm
-
             // Install dependencies, create a new .env file and generate a new key, just for testing
             sh "composer install"
             sh "cp .env.example .env"
