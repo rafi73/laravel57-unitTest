@@ -9,7 +9,6 @@ node('master') {
             sh "composer install"
             sh "cp .env.example .env"
             sh "php artisan key:generate"
-
             // Run any static asset building, if needed
         }
 
